@@ -1,0 +1,84 @@
+.hamster
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 12px
+        margin-top: 5px
+        &-progress
+            width: 33%
+            margin-right: 20px
+            &-line
+                border: 1px solid $border
+                height: 8px
+                border-radius: 20px
+                overflow: hidden
+                background-color: ( 255, 255, 255, .1 )
+                &-inner
+                    display: flex
+                    height: 100%
+                    width: 80%
+                    border-radius: 0 20px 20px 0
+                    background: linear-gradient(90deg, rgba(148,229,139,1) 0%, rgba(215,147,210,1) 50%, rgba(133,116,212,1) 100%)
+            &-rank
+                display: flex
+                justify-content: space-between
+                font-size: 10px
+                margin-bottom: 5px
+                &-level
+                    font-weight: normal  
+        &-params
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 66%
+            border: 1px solid $border
+            border-radius: 40px
+            padding: 4px 15px
+            background-color: rgba( 255, 255, 255, .1 )
+            &-exchange, &-settings
+                display: flex
+                justify-content: center
+                align-items: center
+            & img
+                @include default_icon
+            &-exchange
+                padding: 2px 12px 2px 0
+                border-right: 1px solid $border
+            &-settings
+                padding: 2px 0 2px 12px
+                border-left: 1px solid $border
+            &-speed
+                position: relative
+                display: flex
+                flex-direction: column
+                align-items: center
+                &-title
+                    font-size: 7px
+                    margin-bottom: 4px
+                    font-weight: normal
+                    color: #86837A
+                &-value
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    width: 90px
+                    &-coin
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        & img
+                            width: 18px
+                            height: 18px
+                    &-quant
+                        font-size: 12px
+                    &-info
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        background-color: #68614f
+                        width: 12px
+                        height: 12px
+                        border-radius: 50%
+                        padding: 9px
+                        color: #000

@@ -1,0 +1,17 @@
+<div class="hamster__balance">
+  <div class="hamster__balance-value" id="balance">{{token}}</div>
+</div>
+<div class="hamster__playground" id="hamster-play">
+  <div class="my" #customDiv [@custom]="value===true"></div>
+  <div class="hamster__playground-circle" (click)="incremenToken($event)">
+      <div class="hamster__playground-circle-inner" >
+          <img src="assets/img/grandmaster2.png" alt="">
+      </div>
+  </div>
+</div>
+<div class="hamster__energy">
+  <div class="hamster__energy-item hamster__energy-item--value">
+      <span>{{maxCount}}</span> / <span>1000</span>
+  </div>
+  <div class="hamster__energy-item hamster__energy-item--boost">Boost</div>
+</div>
