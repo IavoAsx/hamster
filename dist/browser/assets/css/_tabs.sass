@@ -1,0 +1,28 @@
+.hamster
+    &__tabs
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background-color: #272a2f
+        border-radius: 20px
+        padding: 5px
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 20%
+            padding: 5px 10px
+            cursor: pointer
+            border-radius: 15px
+            color: $dark_text
+            &--active
+                background-color: #1C1F24
+                color: #fff
+        &-img
+            width: 30px
+            height: 25px
+            object-fit: contain
+            margin-bottom: 5px
+        &-name
+            font-size: 10px
+            font-weight: normal

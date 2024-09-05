@@ -1,0 +1,36 @@
+.hamster
+    &__energy
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 20px 0
+        &-item
+            &--value
+                position: relative
+                margin-left: 30px
+                &::before
+                    position: absolute
+                    content: ''
+                    background: url('../img/thunder.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    width: 30px
+                    height: 20px
+                    left: -20px
+                    transform: rotate(20deg)
+            &--boost
+                position: relative
+                margin-left: 40px
+                margin-right: 12px
+                font-size: 12px
+                &::before
+                    position: absolute
+                    width: 30px
+                    height: 30px
+                    content: ''
+                    background: url('../img/boost.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    left: -40px
+                    top: 50%
+                    transform: translateY(-50%)
